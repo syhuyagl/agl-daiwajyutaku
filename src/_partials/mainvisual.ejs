@@ -1,0 +1,45 @@
+<section class="c-mainvisual">
+    <div class="c-mainvisual__slides">
+        <% if (typeof mainvisual != 'undefined') { %>
+            <% mainvisual.slides && mainvisual.slides.forEach(slide => { %>
+                <div class="c-mainvisual__bg <%= slide.class %>">
+                    &nbsp;
+                </div>
+            <% }) %>
+        <% } %>
+    </div>
+    <div class="c-mainvisual__content">
+        <div class="c-mainvisual__mgroup">
+            <div class="c-mainvisual__mountain">
+                <img src="./assets/img/mountain.png" alt="住みたくなる街 NADA ROKKO">
+            </div>
+            <div class="c-mainvisual__clouds">
+                <img class="c-mainvisual__cloud1 c-mainvisual__cloud" src="./assets/img/cloud1.png" alt="住みたくなる街 NADA ROKKO">
+                <img class="c-mainvisual__cloud2 c-mainvisual__cloud" src="./assets/img/cloud2.png" alt="住みたくなる街 NADA ROKKO">
+                <img class="c-mainvisual__cloud3--right c-mainvisual__cloud" src="./assets/img/cloud3.png" alt="住みたくなる街 NADA ROKKO">
+                <img class="c-mainvisual__cloud3--left c-mainvisual__cloud" src="./assets/img/cloud3.png" alt="住みたくなる街 NADA ROKKO">
+                <img class="c-mainvisual__cloud4 c-mainvisual__cloud" src="./assets/img/cloud4.png" alt="住みたくなる街 NADA ROKKO">
+            </div>
+        </div>
+        <h1 class="c-mainvisual__title">
+            <span class="c-mainvisual__small">住みたくなる街</span>
+            <p class="c-mainvisual__big">NADA</p>
+            <p class="c-mainvisual__big c-mainvisual__bigbot">ROKKO</p>
+        </h1>
+    </div>
+    <div class="c-mainvisual__info">
+        <div class="c-mainvisual__infobtn">
+
+        </div>
+        <div class="c-mainvisual__infos">
+            <ul class="c-mainvisual__items">
+                <li class="c-mainvisual__item">
+                    <a href="#" class="c-mainvisual__infodate">2018.10.30</a>
+                    <a href="#">
+                        <h3 class="c-mainvisual__infotitle">成約御礼申Cし上げます。六甲グランドヒルズ</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

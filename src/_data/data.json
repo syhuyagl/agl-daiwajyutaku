@@ -2,22 +2,36 @@
   "linklists": {
     "main": [
       {
-        "title": "Home",
+        "title": "大和住宅について ",
         "url": "/"
       },
       {
-        "title": "About",
-        "url": "/about.html"
+        "title": "委託管理について",
+        "url": "/"
       },
       {
-        "title": "Nested 1",
-        "url": "/nested/",
-        "links": [
-          {
-            "title": "Nested 2",
-            "url": "/nested/nested/"
-          }
-        ]
+        "title": "会社情報",
+        "url": "/"
+      },
+      {
+        "title": "物件情報",
+        "url": "/"
+      }
+    ]
+  },
+  "mainvisual": {
+    "slides": [
+      {
+        "class": "c-mainvisual__first"
+      },
+      {
+        "class": "c-mainvisual__second"
+      },
+      {
+        "class": "c-mainvisual__third"
+      },
+      {
+        "class": "c-mainvisual__fourth"
       }
     ]
   }

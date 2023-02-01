@@ -1,23 +1,34 @@
 <header class="c-header">
-  <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></h1>
-  <nav class="c-gnav">
-    <ul>
-      <% if (typeof linklists != 'undefined') { %>
-        <% linklists.main && linklists.main.forEach(link => { %>
-          <li>
-            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
-            <% if (link.links) { %>
-              <ul>
-                <% link.links.forEach(child_link => { %>
-                  <li>
-                    <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </li>
-        <% }) %>
-      <% } %>
-    </ul>
-  </nav>
+    <div class="c-header__main">
+      <a href="index.html" class="c-header__logowrapper">
+        <span class="c-header__logo c-header__logotop">兵庫県知事 (10) 8316号</span>
+        <span class="c-header__logo c-header__logobottom">大和住宅株式会社</span>
+      </a>
+      <nav class="c-header__mainnav">
+        <ul class="c-header__navlinks">
+          <% if (typeof linklists != 'undefined') { %>
+            <% linklists.main && linklists.main.forEach(link => { %>
+              <li class="c-header__navlink">
+                <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+                <% if (link.links) { %>
+                  <ul>
+                    <% link.links.forEach(child_link => { %>
+                      <li>
+                        <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
+                      </li>
+                    <% }) %>
+                  </ul>
+                <% } %>
+              </li>
+            <% }) %>
+          <% } %>
+          <a href="#" class="c-header__menu">
+            <img src="./assets/img/menu.png" alt="大和住宅株式会社">
+          </a>
+          <a href="#" class="c-header__contact">
+            <img src="./assets/img/contact.png" alt="大和住宅株式会社">
+          </a>
+        </ul>
+      </nav>
+    </div>
 </header>

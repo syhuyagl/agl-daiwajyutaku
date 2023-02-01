@@ -1,29 +1,80 @@
 /* Header
 ------------------------------------------------------------*/
-.c-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.9);
+@font-face {
+    font-family: Kozuka;
+    src: url("../../assets/fonts/KozGoPr6NRegular.otf");
 }
-/* Main menu
-------------------------------------------------------------*/
-.c-gnav {
-    ul {
+
+.c-header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+    .c-header__logowrapper {
+        padding: 17px 0;
     }
 
-    li {
-        display: inline-block;
+    .c-header__logo {
+        display: block;
+        font-weight: 500;
+        color: #fff;
+        font-size: 1.3rem;
+        padding-left: 30px;
+    }
 
-        + li {
-            margin-left: 20px;
+    .c-header__logobottom {
+        font-family: Kozuka, sans-serif;
+        font-weight: 400;
+        font-size: 2.4rem;
+        letter-spacing: 2.3px;
+    }
+
+    .c-header__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-header__navlinks {
+        display: flex;
+    }
+
+    .c-header__navlink {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding: 29px 19px 0 26px;
+        letter-spacing: 0.3px;
+        font-feature-settings: "palt" 1;
+
+        &:nth-child(4) {
+            padding: 29px 47px 0 26px;
         }
     }
 
-    a {
-        font-size: 1.6rem;
-        text-transform: capitalize;
+    .c-header__menu {
+        width: 90px;
+        height: 90px;
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-header__menu {
+        width: 90px;
+        height: 85px;
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-header__contact {
+        width: 90px;
+        height: 85px;
+        background-color: #f3ff2f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

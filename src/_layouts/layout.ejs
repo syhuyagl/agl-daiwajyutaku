@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <title>
       <%= (typeof title != "undefined" ? title : "Page title") %>
     </title>
@@ -15,12 +16,14 @@
   <body>
 
     <%- include('_partials/header'); -%>
-
-    {{ content }}
-
+    <main class="p-top">
+      {{ content }}
+    </main>
     <%- include('_partials/footer'); -%>
 
     {{ script }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
