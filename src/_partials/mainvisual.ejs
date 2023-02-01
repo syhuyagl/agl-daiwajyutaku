@@ -28,23 +28,23 @@
         </h1>
     </div>
     <div class="c-mainvisual__info">
-        <div class="c-mainvisual__infobtn">
+        <a href="#" class="c-mainvisual__infobtn">
             Infomation <span class="c-arrow c-mainvisual__arrow">→</span>
-        </div>
+        </a>
         <div class="c-mainvisual__infos">
-            <div class="c-mainvisual__items">
+            <ul class="c-mainvisual__items">
                 <% if (typeof info != 'undefined') { %>
                     <% info.items && info.items.forEach(item => { %>
-                        <div class="c-mainvisual__item">
+                        <li class="c-mainvisual__item">
                             <a href="#" class="c-mainvisual__infodate"><%= item.date %> </a>
                             <a href="#">
                                 <h3 class="c-mainvisual__infotitle"><%= item.title %></h3>
                             </a>
-                        </div>
+                        </li>
                     <% }) %>
                 <% } %>
                
-            </div>
+            </ul>
         </div>
     </div>
 </section>

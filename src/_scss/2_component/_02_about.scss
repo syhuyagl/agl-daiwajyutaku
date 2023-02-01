@@ -1,0 +1,113 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-about {
+    padding-top: 166px;
+    padding-bottom: 80px;
+
+    .c-about__title {
+        font-weight: 700;
+        color: #212529;
+        font-size: 2.2rem;
+        font-feature-settings: "palt" 1;
+        line-height: 1.4;
+    }
+
+    .c-about__des {
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: #212529;
+        margin: 27px 0;
+        font-feature-settings: "palt" 1;
+        line-height: 1.8;
+        max-width: 400px;
+        margin: 26px 0 33px;
+    }
+
+    .c-about__box {
+        background-color: #fff;
+        position: absolute;
+        left: -13.2%;
+        top: 16.7%;
+        padding: 77px 61px 79px 76px;
+    }
+
+    .c-about__aiming {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .c-about__aimingimg {
+        position: relative;
+        width: 79.9%;
+        max-width: 1555px;
+        height: 597px;
+        background-size: cover;
+        background-image: url("../../assets/img/aim.jpg");
+    }
+
+    .c-about__aimleft {
+        width: 20%;
+    }
+
+    .c-about__consignment {
+        margin-top: 80px;
+    }
+
+    .c-about__boxconsignment {
+        background-color: #fff;
+        position: absolute;
+        right: -31.2%;
+        top: 12.7%;
+        padding: 75px 54px 79px 59px;
+    }
+
+    .c-about__consignmentimg {
+        position: relative;
+        width: 72.1%;
+        height: 488px;
+        background-size: cover;
+        background-image: url("../../assets/img/consignment.jpg");
+    }
+
+    .c-about__consignmentright {
+        width: 20%;
+    }
+
+    .c-about__consignmentdes {
+        max-width: 316px;
+    }
+
+    .c-about__property {
+        margin-top: 80px;
+    }
+
+    .c-about__boxproperty {
+        background-color: #fff;
+        position: absolute;
+        left: -31.2%;
+        top: 12.7%;
+        padding: 74px 58px 79px 54px;
+    }
+
+    .c-about__propertydes {
+        max-width: 316px;
+    }
+
+    .c-about__propertyimg {
+        position: relative;
+        width: 72.1%;
+        height: 488px;
+        background-size: cover;
+        background-image: url("../../assets/img/property.jpg");
+    }
+
+    .c-about__propertywrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
