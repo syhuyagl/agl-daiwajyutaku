@@ -5,163 +5,215 @@ btn
 /*
 ------------------------------------------------------------*/
 @font-face {
-    font-family: HeiseiKaku;
-    src: url("../../assets/fonts/HeiseiKakuGoStd-W5.otf");
+  font-family: HeiseiKaku;
+  src: url("../../assets/fonts/HeiseiKakuGoStd-W5.otf");
 }
 @font-face {
-    font-family: FuturalRound Bold;
-    src: url("../../assets/fonts/FuturaRoundBold.ttf");
+  font-family: FuturalRound Bold;
+  src: url("../../assets/fonts/FuturaRoundBold.ttf");
+}
+@font-face {
+  font-family: FuturalRound Book;
+  src: url("../../assets/fonts/FuturaBook.otf");
 }
 
 .c-mainvisual {
+  position: relative;
+
+  .c-mainvisual__bg {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .slick-slider {
+    height: 956px;
+    overflow-y: hidden;
+  }
+
+  .slick-list {
+    height: 100%;
+  }
+
+  .slick-track {
+    height: 100%;
+  }
+
+  .c-mainvisual__first {
+    background-image: url("../../assets/img/mv1.jpg");
+    @include sp {
+    }
+  }
+
+  .c-mainvisual__second {
+    background-image: url("../../assets/img/mv2.jpg");
+    @include sp {
+    }
+  }
+
+  .c-mainvisual__third {
+    background-image: url("../../assets/img/mv3.jpg");
+    @include sp {
+    }
+  }
+
+  .c-mainvisual__fourth {
+    background-image: url("../../assets/img/mv4.jpg");
+    @include sp {
+    }
+  }
+
+  .c-mainvisual__content {
+    position: absolute;
+    left: 50%;
+    top: 46.8%;
+    transform: translate(-50%, -50%);
+  }
+
+  .c-mainvisual__mgroup {
+    margin-bottom: 51px;
     position: relative;
+  }
 
-    .c-mainvisual__bg {
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+  .c-mainvisual__cloud {
+    position: absolute;
+  }
+
+  .c-mainvisual__cloud1 {
+    top: 11px;
+    left: 23.4%;
+    transition: 1s;
+    animation: flying 5s ease-in-out forwards infinite;
+    animation-delay: 1s;
+  }
+
+  .c-mainvisual__cloud2 {
+    top: 36%;
+    right: 15.2%;
+    animation: flying 5s ease-in-out forwards infinite;
+    animation-delay: 1.5s;
+  }
+
+  .c-mainvisual__cloud3--right {
+    top: 20px;
+    right: 31.4%;
+    animation: flying 5s ease-in-out forwards infinite;
+    animation-delay: 2s;
+  }
+
+  .c-mainvisual__cloud3--left {
+    top: 45%;
+    left: 20%;
+    animation: flying 5s ease-in-out forwards infinite;
+    animation-delay: 2.5s;
+  }
+
+  .c-mainvisual__cloud4 {
+    bottom: 15%;
+    left: 15.2%;
+    animation: flying 5s ease-in-out forwards infinite;
+    animation-delay: 3s;
+  }
+
+  .c-mainvisual__title {
+    color: #fff;
+    font-feature-settings: "palt" 1;
+    padding-left: 54px;
+  }
+
+  .c-mainvisual__small {
+    font-family: HeiseiKaku, sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: 21px;
+  }
+
+  .c-mainvisual__mountain {
+    text-align: center;
+  }
+
+  .c-mainvisual__big {
+    font-family: FuturalRound Bold, sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 58px;
+    line-height: 1.9;
+  }
+
+  .c-mainvisual__bigbot {
+    letter-spacing: 35px;
+    line-height: 1.75;
+  }
+
+  .c-mainvisual__info {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    background: #fff;
+    width: 89.6%;
+    right: 0;
+    display: flex;
+  }
+  .c-mainvisual__item {
+    display: flex;
+    font-weight: 400;
+  }
+  .c-mainvisual__infotitle {
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding-left: 38px;
+    font-feature-settings: "palt" 1;
+  }
+  .c-mainvisual__arrow {
+    position: absolute;
+    right: 13px;
+    top: 51.1%;
+    transform: translateY(-50%);
+    color: #fff;
+    &:hover {
+    }
+  }
+  .c-mainvisual__items {
+    padding-left: 70px;
+    margin-top: 23px;
+  }
+  .c-mainvisual__item {
+    padding: 8px 0 5px;
+  }
+  .c-mainvisual__infobtn {
+    font-family: FuturalRound Book, sans-serif;
+    font-size: 3.2rem;
+    color: #fff;
+    position: relative;
+    padding: 54px 137px;
+    background: #111;
+    font-feature-settings: "palt" 1;
+    &:hover {
+      color: #111;
+      background: #f3ff2f;
+      .c-mainvisual__arrow {
+        color: #111;
+      }
+    }
+  }
+  @keyframes flying {
+    0% {
+      transform: translateX();
+      opacity: 0.2;
     }
 
-    .slick-slider {
-        height: 956px;
-        overflow-y: hidden;
+    50% {
+      opacity: 1;
     }
 
-    .slick-list {
-        height: 100%;
+    75% {
+      transform: translateX(10px);
+      opacity: 0;
     }
 
-    .slick-track {
-        height: 100%;
+    100% {
+      opacity: 0;
     }
-
-    .c-mainvisual__first {
-        background-image: url("../../assets/img/mv1.jpg");
-        @include sp {
-        }
-    }
-
-    .c-mainvisual__second {
-        background-image: url("../../assets/img/mv2.jpg");
-        @include sp {
-        }
-    }
-
-    .c-mainvisual__third {
-        background-image: url("../../assets/img/mv3.jpg");
-        @include sp {
-        }
-    }
-
-    .c-mainvisual__fourth {
-        background-image: url("../../assets/img/mv4.jpg");
-        @include sp {
-        }
-    }
-
-    .c-mainvisual__content {
-        position: absolute;
-        left: 50%;
-        top: 46.8%;
-        transform: translate(-50%, -50%);
-    }
-
-    .c-mainvisual__mgroup {
-        margin-bottom: 51px;
-        position: relative;
-    }
-
-    .c-mainvisual__cloud {
-        position: absolute;
-    }
-
-    .c-mainvisual__cloud1 {
-        top: 11px;
-        left: 23.4%;
-        transition: 1s;
-        animation: flying 5s ease-in-out forwards infinite;
-        animation-delay: 1s;
-    }
-
-    .c-mainvisual__cloud2 {
-        top: 36%;
-        right: 15.2%;
-        animation: flying 5s ease-in-out forwards infinite;
-        animation-delay: 1.5s;
-    }
-
-    .c-mainvisual__cloud3--right {
-        top: 20px;
-        right: 31.4%;
-        animation: flying 5s ease-in-out forwards infinite;
-        animation-delay: 2s;
-    }
-
-    .c-mainvisual__cloud3--left {
-        top: 45%;
-        left: 20%;
-        animation: flying 5s ease-in-out forwards infinite;
-        animation-delay: 2.5s;
-    }
-
-    .c-mainvisual__cloud4 {
-        bottom: 15%;
-        left: 15.2%;
-        animation: flying 5s ease-in-out forwards infinite;
-        animation-delay: 3s;
-    }
-
-    .c-mainvisual__title {
-        color: #fff;
-        font-feature-settings: "palt" 1;
-        padding-left: 54px;
-    }
-
-    .c-mainvisual__small {
-        font-family: HeiseiKaku, sans-serif;
-        font-weight: 500;
-        font-size: 3rem;
-        letter-spacing: 21px;
-    }
-
-    .c-mainvisual__mountain {
-        text-align: center;
-    }
-
-    .c-mainvisual__big {
-        font-family: FuturalRound Bold, sans-serif;
-        font-weight: 700;
-        font-size: 5rem;
-        letter-spacing: 58px;
-        line-height: 1.9;
-    }
-
-    .c-mainvisual__bigbot {
-        letter-spacing: 35px;
-        line-height: 1.75;
-    }
-
-    .c-mainvisual__info {
-        position: absolute;
-    }
-    @keyframes flying {
-        0% {
-            transform: translateX();
-            opacity: 0.2;
-        }
-
-        50% {
-            opacity: 1;
-        }
-
-        75% {
-            transform: translateX(10px);
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    }
+  }
 }

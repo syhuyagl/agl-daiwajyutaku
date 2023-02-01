@@ -23,23 +23,28 @@
         </div>
         <h1 class="c-mainvisual__title">
             <span class="c-mainvisual__small">住みたくなる街</span>
-            <p class="c-mainvisual__big">NADA</p>
-            <p class="c-mainvisual__big c-mainvisual__bigbot">ROKKO</p>
+            <span class="c-mainvisual__big">NADA</span>
+            <span class="c-mainvisual__big c-mainvisual__bigbot">ROKKO</span>
         </h1>
     </div>
     <div class="c-mainvisual__info">
         <div class="c-mainvisual__infobtn">
-
+            Infomation <span class="c-arrow c-mainvisual__arrow">→</span>
         </div>
         <div class="c-mainvisual__infos">
-            <ul class="c-mainvisual__items">
-                <li class="c-mainvisual__item">
-                    <a href="#" class="c-mainvisual__infodate">2018.10.30</a>
-                    <a href="#">
-                        <h3 class="c-mainvisual__infotitle">成約御礼申Cし上げます。六甲グランドヒルズ</h3>
-                    </a>
-                </li>
-            </ul>
+            <div class="c-mainvisual__items">
+                <% if (typeof info != 'undefined') { %>
+                    <% info.items && info.items.forEach(item => { %>
+                        <div class="c-mainvisual__item">
+                            <a href="#" class="c-mainvisual__infodate"><%= item.date %> </a>
+                            <a href="#">
+                                <h3 class="c-mainvisual__infotitle"><%= item.title %></h3>
+                            </a>
+                        </div>
+                    <% }) %>
+                <% } %>
+               
+            </div>
         </div>
     </div>
 </section>
