@@ -1,0 +1,23 @@
+<section class="c-style">
+  <div class="l-container--1100">
+    <h2 class="c-style__title">Nada style</h2>
+    <p class="c-style__subtitle">灘エリアのご紹介</p>
+    <div class="c-style__items">
+        <% if (typeof styles != 'undefined') { %>
+            <% styles.items && styles.items.forEach(item => { %>
+                <a href="#" class="c-style__item">
+                    <div class="c-style__itembg">
+                      <picture>
+                        <source media="(min-width: 1024px)" srcset="<%= item.bg %>" >
+                        <img src="<%= item.bg %>" alt="<%= item.title %>" >
+                      </picture>
+                      <span class="c-style__itemlabel"><%= item.label %></span>
+                    </div>
+                    <h3 class="c-style__itemtitle"><%= item.title %></h3>
+                </a>
+            <% }) %>
+        <% } %>
+    </div>
+    <a href="#" class="c-button">もっとみる</a>
+  </div>
+</section>

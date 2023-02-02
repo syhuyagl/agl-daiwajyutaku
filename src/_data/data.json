@@ -35,7 +35,7 @@
       }
     ]
   },
-  "info":{
+  "info": {
     "items": [
       {
         "date": "2018.10.30",
@@ -48,6 +48,46 @@
       {
         "date": "2018.10.30",
         "title": "六甲エリアでのひとコマ・・・・珈琲屋さん"
+      }
+    ]
+  },
+  "styles": {
+    "items": [
+      {
+        "label": "レストラン・カフェ",
+        "title": "まめや 六甲店",
+        "bg": "./assets/img/style-1.jpg",
+        "bg-sp": "./assets/img/style-1.jpg"
+      },
+      {
+        "label": "ショップ", 
+        "title": "Emil  Zuckerbacker",
+        "bg": "./assets/img/style-2.jpg",
+        "bg-sp": "./assets/img/style-2.jpg"
+      },
+      {
+        "label": "ショップ",
+        "title": "Vestita (ヴェスティタ)   flower&green shop",
+        "bg": "./assets/img/style-3.jpg",
+        "bg-sp": "./assets/img/style-3.jpg"
+      },
+      {
+        "label": "レストラン・カフェ",
+        "title": "enu`s  KITCHEN",
+        "bg": "./assets/img/style-4.jpg",
+        "bg-sp": "./assets/img/style-4.jpg"
+      },
+      {
+        "label": "レストラン・カフェ",
+        "title": "らーめん専門 いっぽし",
+        "bg": "./assets/img/style-5.jpg",
+        "bg-sp": "./assets/img/style-5.jpg"
+      },
+      {
+        "label": "レストラン・カフェ",
+        "title": "Atelier Rosette (アトリエ ロゼット)",
+        "bg": "./assets/img/style-6.jpg",
+        "bg-sp": "./assets/img/style-6.jpg"
       }
     ]
   }

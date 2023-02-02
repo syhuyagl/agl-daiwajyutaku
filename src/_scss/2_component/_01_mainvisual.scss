@@ -187,16 +187,16 @@ btn
     .c-mainvisual__item {
         padding: 8px 0 5px;
     }
-   
+
     .c-mainvisual__infobtn {
         font-family: FuturalRound Book, sans-serif;
         font-size: 3.2rem;
         color: #fff;
         position: relative;
-
-        padding: 54px 137px;
+        padding: 54px 138px 54px 140px;
         background: #111;
         font-feature-settings: "palt" 1;
+        letter-spacing: -1px;
 
         &:hover {
             color: #111;

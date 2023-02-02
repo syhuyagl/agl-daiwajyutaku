@@ -1,0 +1,74 @@
+/*------------------------------------------------------------
+text
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+@font-face {
+    font-family: FuturalRound Book;
+    src: url("../../assets/fonts/FuturaBook.otf");
+}
+@font-face {
+    font-family: HeiseiKakuW7;
+    src: url("../../assets/fonts/HeiseiKakuGoStd-W7.otf");
+}
+
+.c-style {
+    background-color: #f5f4f3;
+    padding: 61px 15px 98px;
+
+    .c-style__title {
+        font-size: 3rem;
+        color: #212529;
+        text-align: center;
+        font-family: FuturalRound Book, sans-serif;
+    }
+
+    .c-style__subtitle {
+        font-size: 1.4rem;
+        text-align: center;
+        color: #212529;
+        line-height: 0.4;
+        font-family: HeiseiKakuW7, sans-serif;
+    }
+
+    .c-style__items {
+        display: flex;
+        margin-top: 82px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .c-style__item {
+        margin-bottom: 49px;
+
+        &:nth-child(n + 4) {
+            margin-bottom: 42px;
+        }
+    }
+
+    .c-style__itembg {
+        position: relative;
+    }
+
+    .c-style__itemlabel {
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #212529;
+        background-color: #fff;
+        right: 0;
+        bottom: 0;
+        font-feature-settings: "palt" 1;
+        padding: 3px 17px 2px 10px;
+    }
+
+    .c-style__itemtitle {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #212529;
+        padding-top: 8px;
+        letter-spacing: 1.4px;
+        font-feature-settings: "palt" 1;
+    }
+}
