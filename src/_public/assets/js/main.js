@@ -16,4 +16,12 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".c-header__menu").click(function () { 
+    if(!$(".c-header__overlay").hasClass('c-header__overlay--active')){
+      $(".c-header__overlay").addClass('c-header__overlay--active')
+    }
+    else{
+      $(".c-header__overlay").removeClass('c-header__overlay--active')
+    }
+  })
 });

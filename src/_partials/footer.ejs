@@ -1,5 +1,22 @@
 <footer class="c-footer">
-  <div class="l-container">
-   
+  <div class="l-container--1100">
+    <div class="c-footer__wrapper">
+      <div class="c-footer__nav">
+        <a class="c-footer__link c-footer__toppage" href="#">トップページ</a>
+        <ul class="c-footer__links">
+          <% if (typeof menus != 'undefined') { %>
+            <% menus.items && menus.items.forEach(item => { %>
+              <li class="c-footer__link">
+                <a href="#"><%=  item.jp %> </a>
+              </li>
+            <% }) %>
+        <% } %>
+        </ul>
+      </div>
+      <div class="c-footer__logo">
+          <img src="./assets/img/logo.png" alt="DAIWA-JYUTAKU">
+      </div>
+    </div>
+    <p class="c-footer__copyright">Copyright&nbsp; DAIWA-JYUTAKU All Rights Reserved.</p>
   </div>
 </footer>

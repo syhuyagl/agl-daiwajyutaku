@@ -57,20 +57,13 @@
 
     .c-header__menu {
         width: 90px;
-        height: 90px;
-        background-color: #111;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .c-header__menu {
-        width: 90px;
         height: 85px;
         background-color: #111;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 1;
     }
 
     .c-header__contact {
@@ -80,5 +73,68 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .c-header__linktitle {
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .c-header__linktitleen {
+        font-size: 1.8rem;
+    }
+
+    .c-header__linktitlejp {
+        font-feature-settings: "palt" 1;
+    }
+
+    .c-header__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    .c-header__overlay--active {
+        display: flex;
+    }
+
+    .c-header__transparent {
+        background-color: #fff;
+        width: 39%;
+        opacity: 0.6;
+    }
+
+    .c-header__overlaymain {
+        background-color: #000;
+        width: 61%;
+    }
+
+    .c-header__overlaylinks {
+        display: flex;
+        margin-top: 14.1%;
+        margin-left: 16.8%;
+        width: 100%;
+        max-width: 497px;
+        justify-content: space-between;
+    }
+
+    .c-header__link {
+        padding: 14px 0 13px;
+    }
+
+    .c-header__overlaysocials {
+        margin-top: 61px;
+        padding-top: 28px;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        text-align: center;
+    }
+
+    .c-header__facbook {
+        margin-left: 25px;
     }
 }

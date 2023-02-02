@@ -1,0 +1,41 @@
+<section class="c-column">
+  <div class="c-column__column">
+    <div class="c-column__wrapper">
+      <h3 class="c-column__title c-title">Column</h3>
+      <span class="c-column__subtitle c-subtitle">コラム</span>
+      <ul class="c-column__items">
+        <% if (typeof colums != 'undefined') { %>
+            <% colums.items && colums.items.forEach(item => { %>
+                <li class="c-column__list">
+                    <a href="#" class="c-column__item">
+                        <p href="#" class="c-column__date"><span> <%=item.date %> </span></p>
+                        <p class="c-column__itemtitle">
+                            <%=item.title %>
+                        </p>
+                    </a>
+                  </li>
+            <% }) %>
+        <% } %>
+      </ul>
+      <a href="#" class="c-button c-column__button">もっとみる</a>
+    </div>
+  </div>
+  <div class="c-column__faq c-column__column">
+    <div class="c-column__wrapper">
+      <h3 class="c-column__title c-title">FAQ</h3>
+      <span class="c-column__subtitle c-subtitle">賃貸管理トラブル集</span>
+      <ul class="c-column__items c-column__faqitems">
+        <% if (typeof faqs != 'undefined') { %>
+            <% faqs.items && faqs.items.forEach(item => { %>
+                <li class="c-column__faqitem">
+                    <a href="#">
+                      Q. <p class="c-column__faqtitle"><%=item.title %></p>
+                    </a>
+                  </li>
+            <% }) %>
+        <% } %>
+      </ul>
+      <a href="#" class="c-button c-column__button">もっとみる</a>
+    </div>
+  </div>
+</section>

@@ -17,19 +17,9 @@ text
     background-color: #f5f4f3;
     padding: 61px 15px 98px;
 
-    .c-style__title {
-        font-size: 3rem;
-        color: #212529;
-        text-align: center;
-        font-family: FuturalRound Book, sans-serif;
-    }
 
     .c-style__subtitle {
-        font-size: 1.4rem;
-        text-align: center;
-        color: #212529;
         line-height: 0.4;
-        font-family: HeiseiKakuW7, sans-serif;
     }
 
     .c-style__items {
@@ -41,6 +31,7 @@ text
 
     .c-style__item {
         margin-bottom: 49px;
+        width: 31%;
 
         &:nth-child(n + 4) {
             margin-bottom: 42px;
