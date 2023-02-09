@@ -16,7 +16,9 @@ text
 .c-style {
     background-color: #f5f4f3;
     padding: 61px 15px 98px;
-
+    @include sp {
+      padding-top: 21px;
+    }
     @include tab {
         margin-top: 174px;
     }
@@ -50,6 +52,9 @@ text
             &:nth-child(n + 4) {
                 margin-bottom: 30px;
             }
+        }
+        @include sp {
+          width: 100%;
         }
     
     }

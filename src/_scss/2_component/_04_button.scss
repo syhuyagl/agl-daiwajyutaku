@@ -17,4 +17,9 @@ form
     display: flex;
     justify-content: center;
     padding: 6px 0;
+    @include sp {
+        max-width: 294px;
+        width: 100%;
+        padding: 1px 0;
+    }
 }

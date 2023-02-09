@@ -65,4 +65,14 @@ main {
         display: none;
     }
 }
+
+.is-pcnsp {
+    display: block;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: block;
+    }
+}
 //-------------------------------------------------------

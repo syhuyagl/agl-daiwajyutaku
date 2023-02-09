@@ -7,6 +7,9 @@ title
 .c-about {
     padding-top: 166px;
     padding-bottom: 80px;
+    @include sp {
+        padding-bottom: 72px;
+    }
 
     .c-about__title {
         font-weight: 700;
@@ -14,6 +17,9 @@ title
         font-size: 2.2rem;
         font-feature-settings: "palt" 1;
         line-height: 1.4;
+        @include sp {
+            font-size: 2rem;
+        }
     }
 
     .c-about__des {
@@ -28,6 +34,9 @@ title
         @include tab {
             margin: 26px 0 32px;
         }
+        @include sp {
+            margin: 20px 0 23px;
+        }
     }
 
     .c-about__box {
@@ -40,13 +49,14 @@ title
             left: 50%;
             bottom: 0;
             padding: 36px 57px 58px 60px;
-            transform: translate(-50%, 86.6%);
             width: 519px;
             transform: translate(-50%, 86.6%);
         }
         @include sp {
             width: 100%;
+            transform: translate(-50%, 100%);
             max-width: 335px;
+            padding: 26px 16px 16px 19px;
         }
     }
 
@@ -57,6 +67,10 @@ title
             position: relative;
             padding: 0 30px;
             margin-top: 41px;
+        }
+        @include sp {
+            padding: 0 20px;
+            margin-top: 57px;
         }
     }
 
@@ -72,6 +86,10 @@ title
             height: 440px;
             background-image: url("../../assets/img/aim-tab.jpg");
         }
+        @include sp {
+            height: 200px;
+            background-image: url("../../assets/img/aim-sp.jpg");
+        }
     }
 
     .c-about__aimleft {
@@ -86,6 +104,10 @@ title
         @include tab {
             margin-top: 308px;
             padding: 0 30px;
+        }
+        @include sp {
+            margin-top: 300px;
+            padding: 0 20px;
         }
     }
 
@@ -105,6 +127,8 @@ title
         @include sp {
             width: 100%;
             max-width: 335px;
+            transform: translate(-50%, 100%);
+            padding: 26px 16px 16px 19px;
         }
     }
 
@@ -118,6 +142,10 @@ title
             background-image: url("../../assets/img/consignment-tab.jpg");
             width: 100%;
             height: 400px;
+        }
+        @include sp {
+            height: 200px;
+            background-image: url("../../assets/img/consignment-sp.jpg");
         }
     }
 
@@ -134,6 +162,9 @@ title
             margin: 28px 0 32px;
             max-width: 396px;
         }
+        @include sp {
+            margin: 19px 0 23px;
+        }
     }
 
     .c-about__property {
@@ -141,6 +172,10 @@ title
         @include tab {
             margin-top: 253px;
             padding: 0 30px;
+        }
+        @include sp {
+            margin-top: 247px;
+            padding: 0 20px;
         }
     }
 
@@ -161,6 +196,9 @@ title
         @include sp {
             width: 100%;
             max-width: 335px;
+            transform: translate(-50%, 100%);
+            padding: 26px 16px 16px 19px;
+            height: auto;
         }
     }
 
@@ -169,6 +207,9 @@ title
         @include tab {
             margin: 27px 0 34px;
             max-width: 370px;
+        }
+        @include sp {
+            margin: 17px 0 24px;
         }
     }
 
@@ -182,6 +223,10 @@ title
             background-image: url("../../assets/img/property-tab.jpg");
             width: 100%;
             height: 400px;
+        }
+        @include sp {
+            height: 200px;
+            background-image: url("../../assets/img/property-sp.jpg");
         }
     }
 
