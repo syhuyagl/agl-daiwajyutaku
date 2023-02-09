@@ -1,61 +1,68 @@
 /* layout
 ------------------------------------------------------------*/
 body {
-  font-family: $main-fonts;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  @include sp {
-    min-width: 320px;
-  }
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    @include sp {
+        min-width: 320px;
+    }
 }
 //-------------------------------------------------------
 main {
-  // padding: 0px 0 100px;
+    // padding: 0px 0 100px;
 }
 
 .c-top {
-  position: fixed;
-  right: 30px;
-  bottom: 102px;
+    position: fixed;
+    right: 30px;
+    bottom: 102px;
+    @include tab {
+        width: 52px;
+        right: 19px;
+        bottom: 70px;
+    }
 }
 //-------------------------------------------------------
 .l-container {
-  max-width: 1220px;
-  margin: 0 auto;
-  width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .l-container--1100 {
-  max-width: 1100px;
-  margin: 0 auto;
-  width: 100%;
-  @include tab {
-    max-width: 720px;
-  }
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    @include tab {
+        max-width: 720px;
+    }
 }
+
 .l-container--tab {
-  max-width: 933px;
-  margin: 0 auto;
-  width: 100%;
+    max-width: 933px;
+    margin: 0 auto;
+    width: 100%;
 }
+
 .is-hidden {
-  display: none;
+    display: none;
 }
 
 .is-tab {
-  display: none;
-  @include tab {
-    display: block;
-  }
-  @include sp {
     display: none;
-  }
+    @include tab {
+        display: block;
+    }
+    @include sp {
+        display: none;
+    }
 }
 
 .is-pc {
-  display: block;
-  @include tab {
-    display: none;
-  }
+    display: block;
+    @include tab {
+        display: none;
+    }
 }
 //-------------------------------------------------------

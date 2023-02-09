@@ -94,6 +94,9 @@ navi
     .c-column__button {
         width: 100%;
         margin-top: 25px;
+        @include sp {
+            max-width: 330px;
+        }
     }
 
     .c-column__faqitems {

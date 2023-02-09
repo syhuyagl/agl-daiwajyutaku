@@ -48,7 +48,7 @@ $(document).ready(function () {
     }
   });
   $(window).scroll(function () {
-    if ($(window).width() > 1023) {
+    if ($(window).width() >= 768) {
       var headerHeight = $(".c-header").height();
       if ($(this).scrollTop() > headerHeight) {
         $(".c-top").removeClass("is-hidden")

@@ -44,6 +44,10 @@ title
             width: 519px;
             transform: translate(-50%, 86.6%);
         }
+        @include sp {
+            width: 100%;
+            max-width: 335px;
+        }
     }
 
     .c-about__aiming {
@@ -98,6 +102,10 @@ title
             transform: translate(-50%, 85.8%);
             padding: 35px 54px 79px 59px;
         }
+        @include sp {
+            width: 100%;
+            max-width: 335px;
+        }
     }
 
     .c-about__consignmentimg {
@@ -149,6 +157,10 @@ title
             transform: translate(-50%, 115.2%);
             padding: 35px 54px 61px 59px;
             height: 260px;
+        }
+        @include sp {
+            width: 100%;
+            max-width: 335px;
         }
     }
 

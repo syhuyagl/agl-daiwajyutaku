@@ -30,6 +30,9 @@ btn
     .slick-slider {
         height: 956px;
         overflow-y: hidden;
+        @include sp {
+            height: 626px;
+        }
     }
 
     .slick-list {
@@ -69,11 +72,20 @@ btn
         left: 50%;
         top: 46.8%;
         transform: translate(-50%, -50%);
+        @include sp {
+            top: 50.6%;
+            width: 100%;
+            max-width: 340px;
+            margin: 0 auto;
+        }
     }
 
     .c-mainvisual__mgroup {
         margin-bottom: 51px;
         position: relative;
+        @include sp {
+            margin-bottom: 42px;
+        }
     }
 
     .c-mainvisual__cloud {
@@ -120,6 +132,9 @@ btn
         color: #fff;
         font-feature-settings: "palt" 1;
         padding-left: 54px;
+        @include sp {
+            padding-left: 0;
+        }
     }
 
     .c-mainvisual__small {
@@ -128,10 +143,19 @@ btn
         font-size: 3rem;
         display: block;
         letter-spacing: 21px;
+        @include sp {
+            font-size: 2.8rem;
+            letter-spacing: 18.7px;
+            padding-left: 22px;
+        }
     }
 
     .c-mainvisual__mountain {
         text-align: center;
+        @include sp {
+            width: 167px;
+            margin: 0 auto;
+        }
     }
 
     .c-mainvisual__big {
@@ -141,11 +165,22 @@ btn
         font-size: 5rem;
         letter-spacing: 58px;
         line-height: 1.9;
+        @include sp {
+            text-align: center;
+            font-family: FuturaRoundW01-Book, sans-serif;
+            font-weight: 400;
+            overflow: hidden;
+            padding-left: 17px;
+        }
     }
 
     .c-mainvisual__bigbot {
         letter-spacing: 35px;
         line-height: 1.75;
+        @include sp {
+            padding-left: 21px;
+            line-height: 1.05;
+        }
     }
 
     .c-mainvisual__info {
@@ -162,6 +197,10 @@ btn
             bottom: -31px;
             width: 91.9%;
         }
+        @include sp {
+            bottom: -77px;
+            width: 89.6%;
+        }
     }
 
     .c-mainvisual__item {
@@ -174,6 +213,11 @@ btn
         font-size: 1.4rem;
         padding-left: 38px;
         font-feature-settings: "palt" 1;
+        @include sp {
+            font-size: 1.3rem;
+            padding-left: 26px;
+            max-width: 237px;
+        }
     }
 
     .c-mainvisual__arrow {
@@ -191,10 +235,24 @@ btn
             padding-bottom: 27px;
             padding-left: 145px;
         }
+        @include sp {
+            margin-top: 17px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+        }
     }
 
     .c-mainvisual__item {
         padding: 8px 0 5px;
+        @include sp {
+            padding: 0 0 5px;
+        }
+    }
+
+    .c-mainvisual__infodate {
+        @include sp {
+            font-size: 1.3rem;
+        }
     }
 
     .c-mainvisual__infobtn {
@@ -220,6 +278,10 @@ btn
             padding: 7px 155px 7px 72px;
             text-align: center;
             font-size: 2.4rem;
+        }
+        @include sp {
+            font-size: 1.8rem;
+            padding: 2px 111px 2px 72px;
         }
     }
     @keyframes flying {
