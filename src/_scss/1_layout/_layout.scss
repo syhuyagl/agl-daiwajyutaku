@@ -29,10 +29,31 @@ main {
     max-width: 1100px;
     margin: 0 auto;
     width: 100%;
+    @include tab {
+        max-width: 720px;
+    }
 }
 
 .is-hidden {
     display: none;
+}
+
+.is-tab {
+    display: none;
+    @include tab {
+        display: block;
+    }
+    @include sp {
+        display: none;
+    }
+}
+
+.is-pc {
+    display: block;
+    @include tab {
+        display: none;
+    }
+ 
 }
 //-------------------------------------------------------
 

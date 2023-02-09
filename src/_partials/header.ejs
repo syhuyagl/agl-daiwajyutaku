@@ -4,11 +4,11 @@
         <span class="c-header__logo c-header__logotop">兵庫県知事 (10) 8316号</span>
         <span class="c-header__logo c-header__logobottom">大和住宅株式会社</span>
       </a>
-      <nav class="c-header__mainnav">
+      <nav class="c-header__mainnav ">
         <ul class="c-header__navlinks">
           <% if (typeof linklists != 'undefined') { %>
             <% linklists.main && linklists.main.forEach(link => { %>
-              <li class="c-header__navlink">
+              <li class="c-header__navlink is-pc">
                 <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
                 <% if (link.links) { %>
                   <ul>

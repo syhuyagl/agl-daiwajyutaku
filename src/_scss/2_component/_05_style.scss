@@ -5,61 +5,75 @@ text
 /*
 ------------------------------------------------------------*/
 @font-face {
-    font-family: FuturalRound Book;
-    src: url("../../assets/fonts/FuturaBook.otf");
+  font-family: FuturalRound Book;
+  src: url("../../assets/fonts/FuturaBook.otf");
 }
 @font-face {
-    font-family: HeiseiKakuW7;
-    src: url("../../assets/fonts/HeiseiKakuGoStd-W7.otf");
+  font-family: HeiseiKakuW7;
+  src: url("../../assets/fonts/HeiseiKakuGoStd-W7.otf");
 }
 
 .c-style {
-    background-color: #f5f4f3;
-    padding: 61px 15px 98px;
+  background-color: #f5f4f3;
+  padding: 61px 15px 98px;
 
+  @include tab {
+    margin-top: 174px;
+  }
+  .c-style__subtitle {
+    line-height: 0.4;
+  }
 
-    .c-style__subtitle {
-        line-height: 0.4;
+  .c-style__items {
+    display: flex;
+    margin-top: 82px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include tab {
+        margin-bottom: 12px;
+
     }
+  }
 
-    .c-style__items {
-        display: flex;
-        margin-top: 82px;
-        flex-wrap: wrap;
-        justify-content: space-between;
+  .c-style__item {
+    margin-bottom: 49px;
+    width: 31%;
+
+    &:nth-child(n + 4) {
+      margin-bottom: 42px;
     }
-
-    .c-style__item {
-        margin-bottom: 49px;
-        width: 31%;
-
-        &:nth-child(n + 4) {
-            margin-bottom: 42px;
-        }
+    @include tab {
+      width: 47.2%;
+      margin-bottom: 30px;
+      &:nth-child(n + 4) {
+        margin-bottom: 30px;
+      }
     }
+    
+  }
 
-    .c-style__itembg {
-        position: relative;
-    }
+  .c-style__itembg {
+    position: relative;
+  }
 
-    .c-style__itemlabel {
-        position: absolute;
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: #212529;
-        background-color: #fff;
-        right: 0;
-        bottom: 0;
-        font-feature-settings: "palt" 1;
-        padding: 3px 17px 2px 10px;
-    }
+  .c-style__itemlabel {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    font-feature-settings: "palt" 1;
+    padding: 3px 17px 2px 10px;
+  }
 
-    .c-style__itemtitle {
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: #212529;
-        padding-top: 8px;
-        letter-spacing: 1.4px;
-        font-feature-settings: "palt" 1;
-    }
+  .c-style__itemtitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #212529;
+    padding-top: 8px;
+    letter-spacing: 1.4px;
+    font-feature-settings: "palt" 1;
+  }
 }

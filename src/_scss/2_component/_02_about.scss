@@ -25,6 +25,9 @@ title
         line-height: 1.8;
         max-width: 400px;
         margin: 26px 0 33px;
+        @include tab {
+            margin: 26px 0 32px;
+        }
     }
 
     .c-about__box {
@@ -33,11 +36,24 @@ title
         left: -13.2%;
         top: 16.7%;
         padding: 77px 61px 79px 76px;
+        @include tab {
+            left: 50%;
+            bottom: 0;
+            padding: 36px 57px 58px 60px;
+            transform: translate(-50%, 86.6%);
+            width: 519px;
+            transform: translate(-50%, 86.6%);
+        }
     }
 
     .c-about__aiming {
         display: flex;
         justify-content: flex-end;
+        @include tab {
+            position: relative;
+            padding: 0 30px;
+            margin-top: 41px;
+        }
     }
 
     .c-about__aimingimg {
@@ -47,14 +63,26 @@ title
         height: 597px;
         background-size: cover;
         background-image: url("../../assets/img/aim.jpg");
+        @include tab {
+            width: 100%;
+            height: 440px;
+            background-image: url("../../assets/img/aim-tab.jpg");
+        }
     }
 
     .c-about__aimleft {
         width: 20%;
+        @include tab {
+            position: absolute;
+        }
     }
 
     .c-about__consignment {
         margin-top: 80px;
+        @include tab {
+            margin-top: 308px;
+            padding: 0 30px;
+        }
     }
 
     .c-about__boxconsignment {
@@ -63,6 +91,13 @@ title
         right: -31.2%;
         top: 12.7%;
         padding: 75px 54px 79px 59px;
+        @include tab {
+            left: 50%;
+            bottom: 0;
+            width: 519px;
+            transform: translate(-50%, 85.8%);
+            padding: 35px 54px 79px 59px;
+        }
     }
 
     .c-about__consignmentimg {
@@ -71,18 +106,34 @@ title
         height: 488px;
         background-size: cover;
         background-image: url("../../assets/img/consignment.jpg");
+        @include tab {
+            background-image: url("../../assets/img/consignment-tab.jpg");
+            width: 100%;
+            height: 400px;
+        }
     }
 
     .c-about__consignmentright {
         width: 20%;
+        @include tab {
+            position: absolute;
+        }
     }
 
     .c-about__consignmentdes {
         max-width: 316px;
+        @include tab {
+            margin: 28px 0 32px;
+            max-width: 396px;
+        }
     }
 
     .c-about__property {
         margin-top: 80px;
+        @include tab {
+            margin-top: 253px;
+            padding: 0 30px;
+        }
     }
 
     .c-about__boxproperty {
@@ -91,10 +142,22 @@ title
         left: -31.2%;
         top: 12.7%;
         padding: 74px 58px 79px 54px;
+        @include tab {
+            left: 50%;
+            bottom: 0;
+            width: 519px;
+            transform: translate(-50%, 115.2%);
+            padding: 35px 54px 61px 59px;
+            height: 260px;
+        }
     }
 
     .c-about__propertydes {
         max-width: 316px;
+        @include tab {
+            margin: 27px 0 34px;
+            max-width: 370px;
+        }
     }
 
     .c-about__propertyimg {
@@ -103,11 +166,15 @@ title
         height: 488px;
         background-size: cover;
         background-image: url("../../assets/img/property.jpg");
+        @include tab {
+            background-image: url("../../assets/img/property-tab.jpg");
+            width: 100%;
+            height: 400px;
+        }
     }
 
     .c-about__propertywrapper {
         display: flex;
         justify-content: flex-end;
     }
-
 }
