@@ -32,6 +32,11 @@ footer
         &:nth-child(2n) {
             margin-top: -41px;
         }
+        @include  tab {
+            &:nth-child(2n) {
+                transform: translateX(45px);
+            } 
+        }
     }
 
     .c-footer__logo {
@@ -47,6 +52,9 @@ footer
         text-align: right;
         margin-top: 39px;
         letter-spacing: 1.2px;
+        @include tab {
+            text-align: center;
+        }
     }
 
     .c-footer__toppage {

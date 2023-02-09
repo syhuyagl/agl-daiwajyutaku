@@ -1,140 +1,151 @@
 /* Header
 ------------------------------------------------------------*/
 @font-face {
-    font-family: Kozuka;
-    src: url("../../assets/fonts/KozGoPr6NRegular.otf");
+  font-family: Kozuka;
+  src: url("../../assets/fonts/KozGoPr6NRegular.otf");
 }
 
 .c-header {
-    position: absolute;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+
+  .c-header__logowrapper {
+    padding: 17px 0;
+  }
+
+  .c-header__logo {
+    display: block;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.3rem;
+    padding-left: 30px;
+  }
+
+  .c-header__logobottom {
+    font-family: Kozuka, sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: 2.3px;
+  }
+
+  .c-header__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .c-header__navlinks {
+    display: flex;
+  }
+
+  .c-header__navlink {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 29px 19px 0 26px;
+    letter-spacing: 0.3px;
+    font-feature-settings: "palt" 1;
+
+    &:nth-child(1) {
+      padding-left: 26px;
+    }
+
+    &:nth-child(4) {
+      padding: 29px 47px 0 26px;
+    }
+  }
+
+  .c-header__menu {
+    width: 90px;
+    height: 85px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     z-index: 1;
+  }
+
+  .c-header__contact {
+    width: 90px;
+    height: 85px;
+    background-color: #f3ff2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .c-header__linktitle {
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .c-header__linktitleen {
+    font-size: 1.8rem;
+  }
+
+  .c-header__linktitlejp {
+    font-feature-settings: "palt" 1;
+  }
+
+  .c-header__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    display: none;
+  }
 
-    .c-header__logowrapper {
-        padding: 17px 0;
+  .c-header__overlay--active {
+    display: flex;
+  }
+
+  .c-header__transparent {
+    background-color: #fff;
+    width: 39%;
+    opacity: 0.6;
+    @include tab {
+      width: 28.8%;
     }
+  }
 
-    .c-header__logo {
-        display: block;
-        font-weight: 500;
-        color: #fff;
-        font-size: 1.3rem;
-        padding-left: 30px;
+  .c-header__overlaymain {
+    background-color: #000;
+    width: 61%;
+    @include tab {
+      width: 71.5%;
     }
+  }
 
-    .c-header__logobottom {
-        font-family: Kozuka, sans-serif;
-        font-weight: 400;
-        font-size: 2.4rem;
-        letter-spacing: 2.3px;
+  .c-header__overlaylinks {
+    display: flex;
+    margin-top: 14.1%;
+    margin-left: 16.8%;
+    width: 100%;
+    max-width: 497px;
+    justify-content: space-between;
+    @include tab {
+      margin-top: 23.3%;
+      margin-left: 10%;
+      max-width: 469px;
     }
+  }
 
-    .c-header__main {
-        display: flex;
-        justify-content: space-between;
-    }
+  .c-header__link {
+    padding: 14px 0 13px;
+  }
 
-    .c-header__navlinks {
-        display: flex;
-    }
+  .c-header__overlaysocials {
+    margin-top: 61px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+  }
 
-    .c-header__navlink {
-        color: #fff;
-        font-size: 1.8rem;
-        font-weight: 700;
-        padding: 29px 19px 0 26px;
-        letter-spacing: 0.3px;
-        font-feature-settings: "palt" 1;
-
-        &:nth-child(1) {
-            padding-left: 26px;
-        }
-
-        &:nth-child(4) {
-            padding: 29px 47px 0 26px;
-        }
-    }
-
-    .c-header__menu {
-        width: 90px;
-        height: 85px;
-        background-color: #111;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-
-    .c-header__contact {
-        width: 90px;
-        height: 85px;
-        background-color: #f3ff2f;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-
-    .c-header__linktitle {
-        font-weight: 400;
-        color: #fff;
-    }
-
-    .c-header__linktitleen {
-        font-size: 1.8rem;
-    }
-
-    .c-header__linktitlejp {
-        font-feature-settings: "palt" 1;
-    }
-
-    .c-header__overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: none;
-    }
-
-    .c-header__overlay--active {
-        display: flex;
-    }
-
-    .c-header__transparent {
-        background-color: #fff;
-        width: 39%;
-        opacity: 0.6;
-    }
-
-    .c-header__overlaymain {
-        background-color: #000;
-        width: 61%;
-    }
-
-    .c-header__overlaylinks {
-        display: flex;
-        margin-top: 14.1%;
-        margin-left: 16.8%;
-        width: 100%;
-        max-width: 497px;
-        justify-content: space-between;
-    }
-
-    .c-header__link {
-        padding: 14px 0 13px;
-    }
-
-    .c-header__overlaysocials {
-        margin-top: 61px;
-        padding-top: 28px;
-        border-top: 1px solid rgba(255, 255, 255, 0.4);
-        text-align: center;
-    }
-
-    .c-header__facbook {
-        margin-left: 25px;
-    }
+  .c-header__facbook {
+    margin-left: 25px;
+  }
 }

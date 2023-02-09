@@ -6,6 +6,9 @@ navi
 ------------------------------------------------------------*/
 .c-column {
     display: flex;
+    @include tab {
+        flex-direction: column;
+    }
 
     .c-column__title {
         text-align: center;
@@ -22,6 +25,10 @@ navi
         display: flex;
         padding: 63px 0 97px;
         justify-content: center;
+        @include tab {
+            padding: 62px 0 78px;
+            width: 100%;
+        }
     }
 
     .c-column__faq {
@@ -29,6 +36,10 @@ navi
         display: flex;
         justify-content: center;
         background-color: #f3ff2f;
+        @include tab {
+            padding: 62px 0 120px;
+            width: 100%;
+        }
     }
 
     .c-column__items {
